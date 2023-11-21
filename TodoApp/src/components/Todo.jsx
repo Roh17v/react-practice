@@ -21,7 +21,6 @@ function Todo({ label }) {
           <input
             type="date"
             className="border-solid border-gray-800 border p-1.5 text-[15px] rounded-sm"
-            value={date.toLocaleDateString("en-CA")}
             onChange={(e) => setDate(new Date(e.target.value))}
           />
           <button
