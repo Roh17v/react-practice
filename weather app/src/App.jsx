@@ -9,13 +9,7 @@ function App() {
 
   return (
     <>
-      <div
-        className="w-full h-screen"
-        style={{
-          backgroundImage: `url('https://images.pexels.com/photos/10838233/pexels-photo-10838233.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')`,
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="w-full h-screen bg-gradient-to-b from-violet-400 to-fuchsia-500">
         <SearchBox city={city} setCity={setCity} />
         {city && <Card city={city.toUpperCase()} />}
       </div>
